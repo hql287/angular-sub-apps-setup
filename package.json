@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "test:once": "ng test --watch=false",
+    "ci": "npm run e2e"
   },
   "private": true,
   "dependencies": {
