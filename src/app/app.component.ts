@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'main';
+  title = 'Main Application';
+  points = 1;
+
+  plus1() {
+    this.points++;
+  }
+
+  reset() {
+    this.points = 0;
+  }
 }

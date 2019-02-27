@@ -1,3 +1,14 @@
+<h1>Navigation</h1>
 <app-nav></app-nav>
 <br/><br>
 <router-outlet></router-outlet>
+
+<hr>
+
+<h3 class="app-title">Main App Content</h3>
+<div>
+  Points: <span>{{points}}</span>
+</div>
+
+<button (click)="plus1()">Plus 1</button>
+<button (click)="reset()">Reset</button>
