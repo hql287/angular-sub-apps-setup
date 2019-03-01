@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 3030",
+    "start": "ng serve --port 8080",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -12,7 +12,10 @@
     "ci": "npm run e2e",
     "cy:open": "$(npm bin)/cypress open",
     "cy:run": "cypress run",
-		"cy:test": "start-server-and-test start http://localhost:3030/app1/one cy:run"
+    "cy:test:main": "cypress run --spec 'cypress/integration/main/*.js'",
+    "cy:test:app1": "cypress run --spec 'cypress/integration/app1/*.js'",
+    "cy:test:app2": "cypress run --spec 'cypress/integration/app2/*.js'",
+    "cy:test:all": "start-server-and-test start http-get://localhost:8080 cy:run"
   },
   "private": true,
   "dependencies": {

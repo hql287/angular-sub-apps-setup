@@ -15,4 +15,4 @@ before_script:
 install:
   - npm install
 script:
-  - npm run ci
+  - npm run cy:test:all
